@@ -1,0 +1,276 @@
+.nav-bar{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(12, 12, 112);
+    font-size: 23px;
+}
+.nav ul{
+display:flex;
+}
+.nav ul li{
+    list-style: none;
+
+    
+}
+.nav ul li a{
+    text-decoration: none;
+    color: beige;
+    cursor: pointer;
+    margin: 0px 15px;
+   
+}
+.nav ul li :hover{
+    transition: 0.5s;
+    background-color: beige;
+    color: rgb(12, 12, 112);
+    border-left: 10px solid beige;
+    border-right: 10px solid beige;  
+}
+.search{
+    width: 180px;
+    padding-bottom: 15px;
+}
+.recherche{
+    padding-bottom: 22px;
+}
+.titre{
+    color: beige;
+    font-style: italic;
+    font-size:20px;
+}
+.principale{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+
+}
+.droite{
+   
+    border-radius: 10px;
+    height: 550px;
+    width: 1000px;
+    margin: 10px;
+    
+}
+.info{
+    padding-bottom: 100px;
+    margin-left: 200px;
+}
+.gauche{
+    background-color: rgb(12, 12, 112);
+    width: 250px;
+    height: 400px;
+    border-radius: 10px;
+    margin: 30px;    
+}
+
+.gauche ul li{
+        list-style: none;
+        padding: 10px; 
+}
+.gauche ul li a{
+        text-decoration: none;
+        color: beige;
+        cursor: pointer;
+
+}
+.gauche ul li :hover{
+        transition: 0.5s;
+        background-color: beige;
+        color: rgb(12, 12, 112);
+          
+}
+.bienvenue{
+    font-size: 35px;
+    
+}
+.intro{
+    text-align: center;
+}
+.ad{
+    margin: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+.sal-emp{
+    display: none;
+}
+.aff_ins, .aff_admin, .aff_cour, .aff_note, .aff_camps, .cham_ti, .chambre, .ticket, .salle_classe{
+    display: none;
+}
+.btn_ad1, .btn_ad2, .btn_ad3{
+    width: 150px;
+    height: 50px;
+    color: beige;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: rgb(12, 12, 112);
+}
+.aff_admin{
+
+    justify-content: space-around;
+}
+.form{
+    display: none;
+    padding-left: 60px;
+}
+.inp_ins{
+    height: 40px;
+    width: 250px;
+    font-size: 16px;
+} 
+.titres{
+    font-size: 40px;
+    text-align: center;
+    font-style: italic;
+    color: rgb(12, 12, 112);
+}
+.inp_ins:hover{
+    background-color:rgb(12, 12, 112);
+    color: beige;
+}
+.inscription{
+
+    justify-content: space-around;
+}
+.btn_ins{
+    height: 60px;
+    width: 180px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+.btn_ins:hover{
+    background-color: rgb(12, 12, 112);
+    color: beige;
+}
+.globale{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin: 40px;
+}
+.glo{
+    background-color: rgb(12, 12, 112);
+    color: beige;
+    width: 150px;
+    height: 150px;
+    font-size: 20px;
+}
+p a {
+  text-decoration: none;
+  color: beige;
+}
+.icone{
+   margin-left: 10px;
+   border-radius: 36px;
+   cursor: pointer;
+   padding-top: 8px;
+    
+}
+.principales{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer{
+    display: flex;
+     justify-content: center;
+    color:rgb(12, 12, 112);
+    margin-top: 30px;
+    font-size: 20px;
+
+}
+footer a img{
+    margin-left: 5px;
+    cursor: pointer;
+    
+}
+.animation{
+ display: flex;
+ animation-duration: 80s;
+ animation-name: ut;
+ align-items: center;   
+}
+.animation img{
+    margin-left: 20px;
+}
+@keyframes ut {
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(-640px);
+    }
+    50%{
+        transform: translateX(-1280px);
+    }
+    75%{
+        transform: translateX(-192px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+.ufr{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+.ufr_1{
+    background-color:rgb(12, 12, 112) ;
+    margin-left: 10px;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    font-style: italic;
+    font-size: 21px;
+    
+}
+.div1, .div2{
+    display: flex;
+    justify-content: space-around;
+}
+.logo{
+    border-radius: 25px;
+    height: 55px;
+    width: 55px;
+
+}
+.img{
+    padding-top: 10px;
+}
+footer center p{
+    font-style: italic;
+    font-size: 20px;
+}
+.ticket{
+    justify-content: space-around;
+}
+.identification_1{
+   
+    width: 450px;
+    border: 1px solid rgb(12, 12, 112);
+    text-align: center;
+    margin-top: 100px;
+    margin-left: 450px;
+    margin-bottom: 50px;
+    display: none;
+
+    
+}
+.identification_2{
+   
+    width: 450px;
+    border: 1px solid rgb(12, 12, 112);
+    text-align: center;
+    margin-top: 100px;
+    margin-left: 450px;
+    margin-bottom: 50px;
+    display: none;
+
+    
+}
+
+.ici{
+    color: blue;
+}

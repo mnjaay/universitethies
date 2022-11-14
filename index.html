@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Universite Iba der thiam de THIES</title>
+</head>
+<body>
+    <div class="nav-bar">
+        <div class="img">
+            <img src="téléchargement.jpg" class="logo">
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a href="">Accueil</a></li>
+                <li><a href="#ufr">UFR</a></li>
+                <li><a href="#footer">Contact</a></li>
+            </ul>
+        </div>
+        
+       
+       
+        <div class="icone">
+            <img src="images.png" height="50px" width="50px" class="icone">
+        
+        </div>
+    </div>
+   
+    
+    <div class="principale">
+        <div class="gauche">
+           
+                
+
+            
+          <ul>
+            <li class="notes"><a href="#">NOTES</a></li>
+            <hr>
+            <li class="admin"><a href="#">ADMINISTRATION</a></li>
+            <hr>
+            <li class="camps"><a href="#">CAMPUS SOCIAL</a></li>
+         <hr>
+            <div class="cham_ti">
+                
+                <ul>
+                    <li class="chamb"><a href="#">CHAMBRE</a></li>
+                    <hr>
+                    <li class="tiq"><a href="#">TICKET</a></li>
+                    <hr>
+                </ul>
+
+            </div>
+            
+            <li class="cour"><a href="#" >CAMPUS PEDAGOGIQUE</a></li>
+             <div class="sal-emp">
+                
+                <ul>
+                    <li class="salle"><a href="#">SALLE DE CLASSE</a></li>
+                    <hr>
+                    <li class="emploi"><a href="#">EMPLOIE DU TEMPS</a></li>
+                </ul>
+
+             </div>
+            <hr>
+            <li class="ins"><a href="#">INSCRIPTION</a></li>
+            <hr>
+
+          </ul>
+        </div>
+        <div class="droite">
+            <div class="intro">
+                <img src="téléchargement.jpg" width="350px" height="350px" alt="" class="img">
+                <p class="bienvenue"><strong>Bienvenue dans la plateforme multi-taches de l'UIDT de THIES</strong></p>
+                
+            </div>
+
+            <div class="aff_note">
+                <p class="titres">NOTES</p>
+                <p>
+                  <strong>
+                    Vous êtes sur l'interface de prévisualisation des unités d'enseignement aux quelles vous vous êtes inscrits. Notez bien que pour une année donnée, vous ne serez évalués qu'en fonction de ces inscriptions.
+                    Les passants sont inscrits à toutes les UEs de la classe.
+                    Les rédoublants sont inscrits uniquement aux UEs non validées et/ou aux UEs antérieures (du niveau précédent) non validées.
+                    Les conditionnels sont inscrits aux UEs précédement non validées (UEs antérieures) et aux UEs du niveau de la classe actuelle de l'inscription de l'étudiant.
+                    Si vous vous rendez compte qu'une UE manque ou qu'on vous a inscrit à une UE par erreur, merci de contacter le service pédagogique de votre établissement</p>
+                
+                  </strong>  
+                  <div class="globale">
+                    <div class="glo">
+                        <p >UEs Inscrit</p><br>
+                        <p>10</p>
+                    </div>
+                    <div class="glo">
+                        <p >Nombre d'Absence</p><br>
+                        <p>0</p>
+                    </div>
+                    <div class="glo">
+                        <p>Moyenne Semestrielle</p><br>
+                        <p>Neant</p>
+                    </div>
+                    <div class="glo">
+                        <p >Mes Notes </p>
+                        <p class="mes_notes"><a href="#" > Cliquez ici pour voir</a></p>
+                    </div>
+                    <div>
+
+                    </div>
+                  </div>
+            </div>
+            <div class="aff_camps">
+                <p class="titres">CAMPUS SOCIAL</p>
+                <div class="chambre">
+                    <p>Si vous ne disposez pas encore de chambre veuillez remplir ces champs</p>
+                    <div class="principales">
+                        <div>
+                            <label for="">NOM</label><br>
+                            <input type="text" placeholder="Nom..." required class="inp_ins"><br><br>
+                            <label for="">PRENOM</label><br>
+                            <input type="text" placeholder="Prenom..." required class="inp_ins"><br><br>
+                            <label for="">NUMREO DE DOSSIER</label><br>
+                            <input type="text" placeholder="1234567890..." required class="inp_ins"><br><br>
+                            <label for="">Region ou Ville d'origine</label><br>
+                            <input type="text" placeholder="Dakar..." required class="inp_ins"><br><br>
+                        </div>
+                        <div>
+                            
+                  
+                            <label for="">Vous avez des Proches a Thies ? (oui ou non)</label><br>
+                            <input type="text" placeholder="OUI ou NON.." required class="inp_ins"><br><br>
+                            <label for="">Avez-une fois beneficier de logement</label><br>
+                            <input type="text" placeholder="OUI ou NON..."required class="inp_ins"><br><br>
+                            <label for="">Etes vous Boursier ?</label><br>
+                            <input type="text" placeholder="OUI ou NON" class="inp_ins"><br><br>
+                            <label for="">Si OUI</label><br>
+                            <input type="text" placeholder="ENTIERE...." class="inp_ins">
+                        </div>
+                        <div>
+                            <label for="">Campus de votre Choix</label><br>
+                            <select name="" id="">
+                                <option value="">VCN</option>
+                                <option value="">HDR</option>
+                                <option value="">EPT</option>
+                            </select><br><br>
+                            <label for="">Genre</label><br>
+                            <select name="" id="">
+                                <option value="">Homme</option>
+                                <option value="">Femme</option>
+        
+                            </select><br><br>
+                          <p>Apres vous avoir octroyez <br> une chambre vous allez payer une caution de 10000 <br> et 3000 par mois</p>
+                          <button class="btn_ins">SOUMETTRE</button>
+                        </div>
+
+                  </div>
+
+            
+
+                </div>  
+                 <div class="ticket">
+                    <div>
+                        <label for="">NOM</label><br>
+                        <input type="text" placeholder="Nom..." required class="inp_ins"><br><br>
+                        <label for="">PRENOM</label><br>
+                        <input type="text" placeholder="Prenom..." required class="inp_ins"><br><br>
+                        <label for="">NUMREO DE DOSSIER</label><br>
+                        <input type="text" placeholder="1234567890..." required class="inp_ins"><br><br>
+                        <select>
+                            <option>Petit Dejener</option>
+                            <option> Dejener</option>
+                        </select>
+                        <label for="">Nombre de tickets </label><br><br>
+                        <input type="text" placeholder="20" required class="inp_ins"><br><br>
+                        <button class="btn_ins">ACHETER</button>
+                    </div>
+                    <div>
+                        <img src="images1.png" height="400px" width="400px">
+                    </div>
+
+
+                 </div>
+             </div>          
+            <div class="aff_cour">
+                <p class="titres">CAMPUS PEDAGOGIQUE</p>
+                <div class="salle_classe">
+                    <div class="div1">
+                        <div>
+                            <strong>UFR SET</strong>
+                            <br>
+                            <table border="">
+                                <tr>
+                                    <th>Filiere</th><th>Niveau</th><th>Salle</th> <th>Batiment</th><th>Date</th><th>heure</th>
+                                </tr>
+                                <tr>
+                                    <td>Informatique</td><td>Licence 1</td><td>1</td><td>Bloc Pedagogique</td><td>21-10-2022</td><td>08H-12H</td>
+                                </tr>
+                                <tr>
+                                    <td>Informatique</td><td>Licence 3</td><td>2</td><td>Bloc Pedagogique</td><td>21-10-2022</td><td>08H-12H</td>
+        
+                                </tr> 
+                                <tr>
+                                    <td>Informatique</td><td>Licence 2</td><td>3</td><td>Bloc Pedagogique</td><td>21-10-2022</td><td>08H-12H</td>
+                                </tr> 
+                                <tr>
+                                    <td>Informatique</td><td>Master 1</td><td>4</td><td>Bloc Pedagogique</td><td>21-10-2022</td><td>08H-12H</td>
+                                </tr>
+                                   <tr>
+                                    <td>Informatique</td><td>Master 2</td><td>5</td><td>Bloc Pedagogique</td><td>21-10-2022</td><td>08H-12H</td>
+                                    
+                                   </tr>   
+                            </table>
+                        </div>
+                        <div>
+                            <strong>UFR SES</strong>
+                            <br>
+                            <table border="">
+                                <tr>
+                                    <th>Filiere</th><th>Niveau</th><th>Salle</th> <th>Batiment</th><th>Date</th><th>heure</th>
+                                </tr>
+                                <tr>
+                                    <td>Informatique</td><td>Licence 1</td><td>1</td><td>Bloc Pedagogique</td><td>21-10-2022</td><td>08H-12H</td>
+                                </tr>
+                                <tr>
+                                    <td>Informatique</td><td>Licence 1</td><td>1</td><td>Bloc Pedagogique</td><td>21-10-2022</td><td>08H-12H</td>
+        
+                                </tr> 
+                                <tr>
+                                    <td>Informatique</td><td>Licence 1</td><td>1</td><td>Bloc Pedagogique</td><td>21-10-2022</td><td>08H-12H</td>
+                                </tr> 
+                                <tr>
+                                    <td>Informatique</td><td>Licence 1</td><td>1</td><td>Bloc Pedagogique</td><td>21-10-2022</td><td>08H-12H</td>
+                                </tr>
+                                   <tr>
+                                    <td>Informatique</td><td>Licence 1</td><td>1</td><td>Bloc Pedagogique</td><td>21-10-2022</td><td>08H-12H</td>
+                                    
+                                   </tr>   
+                            </table>
+                        </div>
+                        
+                    </div>
+                    <div class="div2">
+                        <div>
+
+                    
+                            <strong>UFR SI</strong>
+                            <br>
+                            <table border="">
+                                <tr>
+                                    <th>Filiere</th><th>Niveau</th><th>Salle</th> <th>Batiment</th><th>Date</th><th>heure</th>
+                                </tr>
+                                <tr>
+                                    <td>Informatique</td><td>Licence 1</td><td>1</td><td>Bloc Pedagogique</td><td>21-10-2022</td><td>08H-12H</td>
+                                </tr>
+                                <tr>
+                                    <td>Informatique</td><td>Licence 1</td><td>1</td><td>Bloc Pedagogique</td><td>21-10-2022</td><td>08H-12H</td>
+        
+                                </tr> 
+                                <tr>
+                                    <td>Informatique</td><td>Licence 1</td><td>1</td><td>Bloc Pedagogique</td><td>21-10-2022</td><td>08H-12H</td>
+                                </tr> 
+                                <tr>
+                                    <td>Informatique</td><td>Licence 1</td><td>1</td><td>Bloc Pedagogique</td><td>21-10-2022</td><td>08H-12H</td>
+                                </tr>
+                                   <tr>
+                                    <td>Informatique</td><td>Licence 1</td><td>1</td><td>Bloc Pedagogique</td><td>21-10-2022</td><td>08H-12H</td>
+                                    
+                                   </tr>   
+                            </table>
+                        </div>
+                        <div>
+
+                    
+                            <strong>IUT</strong>
+                            <br>
+                            <table border="">
+                                <tr>
+                                    <th>Filiere</th><th>Niveau</th><th>Salle</th> <th>Batiment</th><th>Date</th><th>heure</th>
+                                </tr>
+                                <tr>
+                                    <td>Informatique</td><td>Licence 1</td><td>1</td><td>Bloc Pedagogique</td><td>21-10-2022</td><td>08H-12H</td>
+                                </tr>
+                                <tr>
+                                    <td>Informatique</td><td>Licence 1</td><td>1</td><td>Bloc Pedagogique</td><td>21-10-2022</td><td>08H-12H</td>
+        
+                                </tr> 
+                                <tr>
+                                    <td>Informatique</td><td>Licence 1</td><td>1</td><td>Bloc Pedagogique</td><td>21-10-2022</td><td>08H-12H</td>
+                                </tr> 
+                                <tr>
+                                    <td>Informatique</td><td>Licence 1</td><td>1</td><td>Bloc Pedagogique</td><td>21-10-2022</td><td>08H-12H</td>
+                                </tr>
+                                   <tr>
+                                    <td>Informatique</td><td>Licence 1</td><td>1</td><td>Bloc Pedagogique</td><td>21-10-2022</td><td>08H-12H</td>
+                                    
+                                   </tr>   
+                            </table>
+                        </div>
+
+                    </div>
+
+                   
+                    
+                    
+                   
+
+                </div>
+            </div>
+            <div class="aff_admin">
+                <p class="titres">ADMINISTRATION</p>
+                <div class="ad">
+                    <button class="btn_ad1">Retrait Releve de Note</button>
+                    <button class="btn_ad2">Retrait d'Attestation</button>
+                    <button class="btn_ad3">Retrait de Diplome</button>
+    
+                </div>
+                <div class="form">
+                    <label for="">NOM</label><br>
+                    <input type="text" placeholder="NOM..." class="inp_ins" ><br><br>
+                    <label for="">PRENOM</label><br>
+                    <input type="text" placeholder="PRENOM..." class="inp_ins"><br><br>
+                    <label for="">NUMREO DE DOSSIER</label><br>
+                    <input type="text" placeholder= "1234567890..." class="inp_ins"><br><br>
+                    <label for="">OBJET DE RETRAIT</label><br>
+                    <input type="text" class="inp_ins"><br><br>
+                    <button class="btn_ins">SOUMETTRE</button>
+                </div>
+         
+            </div>
+            <div class="aff_ins">
+                <p class="titres">INSCRIPTION</p>
+                <p>Les <strong>NB</strong> concernent seulement les Nouveaux bacheliers</p>
+                <p>Vous êtes nouveau bachelier admis par Campusen, vous devez nécessairement :
+
+                    Valider votre orientation sur la plateforme Campusen en effectuant le paiement des droits d’inscriptions à travers les opérateurs de transfert d’argent agréés par le Ministère de l’Enseignement Supérieur, de la Recherche et de l’Innovation  dans les délais établis et garder précieusement votre reçu de paiement.
+                    
+                    Au lancement des inscriptions administratives (la date vous sera communiquée dans votre messagerie), vous recevrez une notification par e-mail.
+                    
+                    L'inscription se fait exculsivement en ligne, mais ne sera possible que quand le calendrier d'inscription est défini et en cours pour votre classe.
+                    
+                    Pour toute information supplémentaire liée à votre inscription, vous pouvez contacter la direction de la Scolarité par e-mail à l'adresse dsos@univ-thies.sn
+                    </p>
+                <br>
+               <div class="inscription">
+                <div>
+                    <label for="">NOM</label><br>
+                    <input type="text" placeholder="Nom..." required class="inp_ins" id="nom_etudiant"><br><br>
+                    <label for="">PRENOM</label><br>
+                    <input type="text" placeholder="Prenom..." required class="inp_ins" id="prenom_etudiant"><br><br>
+                    <label for="">NUMREO DE DOSSIER</label><br>
+                    <input type="text" placeholder="1234567890..." required class="inp_ins"><br><br>
+                </div>
+                <div>
+                    
+                    <label for="">ETABLISSEMENT (NB)</label><br>
+                    <input type="text" placeholder="CNDL..." required class="inp_ins"><br><br>
+                    <label for="">MOYENNE AU BAC (NB)</label><br>
+                    <input type="text" placeholder="10.0..." required class="inp_ins"><br><br>
+                    <label for="">ANNEE DE BAC</label><br>
+                    <input type="text" placeholder="2022..."required class="inp_ins"><br><br>
+                </div>
+                <div>
+                    <label for="">Filiere</label><br>
+                    <select name="" id="">
+                        <option value="">LGI</option>
+                        <option value="">LMI</option>
+                        <option value="">LSEE</option>
+                        <option value="">LPC</option>
+                    </select><br><br>
+                    <label for="">Niveau</label><br>
+                    <select name="" id="">
+                        <option value="">1ere Année</option>
+                        <option value="">2eme Année</option>
+                        <option value="">3eme Année</option>
+                        <option value="">Master 1</option>
+                        <option value="">Master 2</option>
+
+                    </select><br><br>
+                    <label for="">Payez avec...</label><br>
+                    <input type="checkbox">
+                    <label for=""><img src="om_logo_original.png" height="30px" width="30px" class="om"> Orange Money</label><br>
+                    <input type="checkbox">
+                    <label for=""><img src="téléchargement (1).png" height="30px" width="30px"> Free Money</label><br>
+                    <input type="checkbox">
+                    <label for=""><img src="téléchargement (2).png" height="15px" width="30px">Wave</label>
+                </div>
+                <button class="btn_ins" onclick="message()">S'INSCRIRE</button>
+               </div>
+               
+
+             </div>
+            </div>
+
+            
+         </div>
+
+         <div class="identification_1">
+            <div class="login">
+                <p class="titres">NOUVEAU COMPTE</p>
+                    <label for="">NOM</label><br>
+                    <input type="text" placeholder="Nom..." required class="inp_ins"><br><br>
+                    <label for="">PRENOM</label><br>
+                    <input type="text" placeholder="Prenom..." required class="inp_ins"><br><br>
+                    <label for="">EMAIL UNIVERSITAIRE</label><br>
+                    <input type="text" placeholder="XXX@univ-thies.sn" required class="inp_ins"><br><br>
+                   
+                    <label for="">NUMREO DE DOSSIER</label><br>
+                    <input type="text" placeholder="1234567890..." required class="inp_ins"><br><br>
+                    <label for="">NOUVEAU MOT DE PASSE</label><br>
+                    <input type="password"  required class="inp_ins"><br><br>
+                    <label for="">CONFIRMER MOT DE PASSE</label><br>
+                    <input type="password"  required class="inp_ins"><br><br>
+                    <button class="btn_ins" id="inscription">S'INSCRIRE</button>
+                </div>
+        
+
+            </div>
+            <div class="identification_2">
+                <div class="login_2">
+        
+                    <p class="titres">identification</p>
+                     
+                        <label for="">EMAIL UNIVERSITAIRE</label><br>
+                        <input type="text" placeholder="XXX@univ-thies.sn" required class="inp_ins"><br><br>
+                        <label for=""> MOT DE PASSE</label><br>
+                        <input type="password"  required class="inp_ins"><br><br>
+                        <button class="btn_ins" onclick="aff_princ()" >SE CONNECTER</button>
+                        <br><br>
+                        <p>Si vous n'avez pas de compte veuiller Cliquez <a href="#" class="ici">ICI</a></p>
+        
+                </div>
+
+            </div>
+                
+        
+
+
+
+
+
+
+         <div class="animation">
+            <img src="class.jpg" height="300px" width="300px">
+            <img src="images 2.png" height="300px" width="300px">
+            <img src="images1.png" height="300px" width="300px">
+            <img src="class.jpg" height="300px" width="300px">
+            <img src="images 2.png" height="300px" width="300px">
+            <img src="images1.png" height="300px" width="300px">
+            <img src="class.jpg" height="300px" width="300px">
+            <img src="images 2.png" height="300px" width="300px">
+            <img src="images1.png" height="300px" width="300px">
+
+         </div>
+         <center><p class="titres">Les UFR</p></center>
+         <div class="ufr" id="ufr">
+
+        
+            <div class="ufr_1">
+                <strong>UFR SET</strong><br>
+                <p>Departement Mathematique</p>
+                <p>Departement Informatique</p>
+                <p>Departement Physique-Chimie</p>
+                <p>Departement Science de l'Eau et de l'Environnement</p>
+
+            </div>
+            <div class="ufr_1">
+                <strong>UFR SES</strong><br>
+                <p>Departement Management des Oraganisation</p>
+                <p>Departement Science Economique et Gestion</p>
+                <p>Departement LALESH</p>
+                
+
+            </div>
+            <div class="ufr_1">
+                <strong>UFR SES</strong><br>
+                <p>Departement Mathematique</p>
+                <p>Departement Informatique</p>
+                <p>Departement Physique-Chimie</p>
+                <p>Departement Science de l'Eau et de l'Environnement</p>
+
+            </div>
+            <div class="ufr_1">
+                <strong>UFR SI</strong><br>
+                <p>Departement Mathematique</p>
+                <p>Departement Informatique</p>
+                <p>Departement Physique-Chimie</p>
+                <p>Departement Science de l'Eau et de l'Environnement</p>
+
+            </div>
+            <div class="ufr_1">
+                <strong>IUT</strong><br>
+                <p>Departement Mathematique</p>
+                <p>Departement Informatique</p>
+                <p>Departement Physique-Chimie</p>
+                <p>Departement Science de l'Eau et de l'Environnement</p>
+
+            </div>
+
+         </div>
+       <footer>
+        <center><br><br><br>
+            <p>Université Iba Der THIAM de Thiès <br><br><br>
+
+                Grand Standing, derrière C3S  Thiès <br><br><br>
+                
+                BP: A967 Thiès</p>
+        </center>
+        <div class="footer" id="footer">
+          <a href="">  <img src="téléchargement (3).png" height="50px" width="50px" alt="" >   </a>  
+          <a href="">  <img src="téléchargement (4).png" height="50px" width="50px" alt="" >   </a>  
+          <a href="https://twitter.com/univthies?ref_src=twsrc%5Etfw%7Ctwcamp%5Eembeddedtimeline%7Ctwterm%5Escreen-name%3Aunivthies%7Ctwcon%5Es1_c1">  <img src="téléchargement (5).png" height="50px" width="50px" alt="" >   </a>  
+          <a href="">  <img src="téléchargement (8).png" height="50px" width="50px" alt="" >   </a>  
+        </div>
+       <center><p>Copyright&nbsp;<strong>© 2022</strong> Mouhamed Ndiaye <strong></p>	</center> 
+       </footer>
+
+
+
+    <script>
+        const mes_notes=document.querySelector(".mes_notes");
+        const notes=document.querySelector(".notes");
+        const admin=document.querySelector(".admin");
+        const cour=document.querySelector(".cour");
+        const sal_emp=document.querySelector(".sal-emp");
+        const ins=document.querySelector(".ins");
+        const camps=document.querySelector(".camps");
+        const salle=document.querySelector(".salle");
+        const emploi=document.querySelector(".emploi");
+        const intro=document.querySelector(".intro");
+        const inscription=document.querySelector(".inscription");
+        const cham_ti=document.querySelector(".cham_ti");
+        const chambre=document.querySelector(".chambre");
+        const chamb=document.querySelector(".chamb");
+        const tiq=document.querySelector(".tiq");
+        const btn_ad1=document.querySelector(".btn_ad1");
+        const btn_ad2=document.querySelector(".btn_ad2");
+        const btn_ad3=document.querySelector(".btn_ad3");
+        const ad=document.querySelector(".ad");
+        const principale=document.querySelector(".principale");
+        const icone=document.querySelector(".icone");
+
+        const aff_ins=document.querySelector(".aff_ins");
+        const aff_admin=document.querySelector(".aff_admin");
+        const aff_camps=document.querySelector(".aff_camps");
+        const aff_cour=document.querySelector(".aff_cour");
+        const aff_note=document.querySelector(".aff_note");
+        const form=document.querySelector(".form");
+        const ticket=document.querySelector(".ticket");
+        const salle_classe=document.querySelector(".salle_classe");
+        var prenom_etudiant=document.querySelector("#prenom_etudiant");
+        var nom_etudiant=document.querySelector("#nom_etudiant");
+
+      
+
+
+        
+        
+        function message() {
+          alert ("Bonjour "+prenom_etudiant.value+" "+nom_etudiant.value+" "+ " votre inscription est validée ")
+        }
+       
+        mes_notes.addEventListener("click",affiche_mes_notes);
+        function affiche_mes_notes(){
+            alert("Vos Notes seront envoyés dans votre boite mail universitaire par pdf");
+        }
+        btn_ad1.addEventListener("click",affiche_form);
+        btn_ad2.addEventListener("click",affiche_form);
+        btn_ad3.addEventListener("click",affiche_form);
+        
+        function affiche_form(){
+            aff_ins.style.display='none';
+            intro.style.display='none';
+            sal_emp.style.display='none';
+            aff_admin.style.display='initial';
+            aff_camps.style.display='none';
+            aff_cour.style.display='none';
+            aff_note.style.display='none';
+            cham_ti.style.display='none';
+            chambre.style.display='none';
+            ad.style.display='none';
+            form.style.display='initial';
+
+        } 
+      
+        salle.addEventListener("click",affiche_classe);
+        function affiche_classe(){
+
+            aff_ins.style.display='none';
+            salle_classe.style.display='initial';
+            salle.style.display='initial';
+            intro.style.display='none';
+            sal_emp.style.display='initial';
+            aff_admin.style.display='none';
+            aff_camps.style.display='none';
+            aff_cour.style.display='initial';
+            aff_note.style.display='none';
+            cham_ti.style.display='none';
+            chambre.style.display='none';
+        } 
+        ins.addEventListener("click",affiche_ins);
+        function affiche_ins(){
+            aff_ins.style.display='initial';
+            inscription.style.display='flex';
+            intro.style.display='none';
+            sal_emp.style.display='none';
+            aff_admin.style.display='none';
+            aff_camps.style.display='none';
+            aff_cour.style.display='none';
+            aff_note.style.display='none';
+            cham_ti.style.display='none';
+            chambre.style.display='none';
+
+        }
+    
+        chamb.addEventListener("click",affiche_chambre);
+        function affiche_chambre(){
+            aff_ins.style.display='none';
+            intro.style.display='none';
+            sal_emp.style.display='none';
+            aff_admin.style.display='none';
+            aff_camps.style.display='initial';
+            aff_cour.style.display='none';
+            aff_note.style.display='none';
+            cham_ti.style.display='initial';
+            chambre.style.display='initial';
+            ticket.style.display='none';
+
+        }
+        camps.addEventListener("click",affiche_camps);
+        function affiche_camps(){
+            aff_ins.style.display='none';
+            intro.style.display='none';
+            sal_emp.style.display='none';
+            aff_admin.style.display='none';
+            aff_camps.style.display='initial';
+            aff_cour.style.display='none';
+            aff_note.style.display='none';
+            cham_ti.style.display='initial';
+            chambre.style.display='none'
+
+
+        }
+        tiq.addEventListener("click",affiche_ticket);
+        function affiche_ticket(){
+            aff_ins.style.display='none';
+            intro.style.display='none';
+            sal_emp.style.display='none';
+            aff_admin.style.display='none';
+            aff_camps.style.display='initial';
+            aff_cour.style.display='none';
+            aff_note.style.display='none';
+            cham_ti.style.display='initial';
+            chambre.style.display='none';
+            ticket.style.display='initial';
+            ticket.style.display='flex';
+
+
+        }
+        
+
+
+        admin.addEventListener("click",affiche_admin);
+        function affiche_admin(){
+            intro.style.display='none';
+            sal_emp.style.display='none';
+             aff_ins.style.display='none'
+             aff_admin.style.display='initial';
+            aff_camps.style.display='none';
+            aff_cour.style.display='none';
+            aff_note.style.display='none';
+            cham_ti.style.display='none';
+
+
+        }
+        notes.addEventListener("click",affiche_note);
+        function affiche_note(){
+            intro.style.display='none';
+            sal_emp.style.display='none';
+             aff_ins.style.display='none'
+            aff_admin.style.display='none';
+            aff_camps.style.display='none';
+            aff_cour.style.display='none';
+            aff_note.style.display='initial';
+            aff_ins.style.display='none';
+            cham_ti.style.display='none';
+
+        }
+        cour.addEventListener("click",affiche_cour);
+        function affiche_cour(){
+            intro.style.display='none';
+            sal_emp.style.display='none';
+            aff_ins.style.display='none'
+            aff_admin.style.display='none';
+            aff_camps.style.display='none';
+            aff_cour.style.display='initial';
+            aff_note.style.display='none';
+            cham_ti.style.display='none';         }
+
+        cour.addEventListener("click",aff_salle);
+
+        function aff_salle(){
+            sal_emp.style.display='initial';
+            intro.style.display='none';
+
+        }
+
+
+        const ici=document.querySelector(".ici");
+        const login_2=document.querySelector(".login_2");
+        const login=document.querySelector(".login");
+        const identification_1=document.querySelector(".identification_1");
+        const identification_2=document.querySelector(".identification_2");
+        ici.addEventListener("click",ici_aff);
+        function ici_aff(){
+            principale.style.display='none';
+            identification_1.style.display='initial';
+            identification_2.style.display='none';
+           
+
+        }
+        const insc=document.querySelector("#inscription");
+        insc.addEventListener("click",aff_princ);
+        function aff_princ(){
+            principale.style.display='initial';
+            identification_1.style.display='none';
+            identification_2.style.display='none';
+
+        }
+        icone.addEventListener("click",icon);
+        function icon(){
+          principale.style.display='none';
+          identification_2.style.display='initial';
+          identification_1.style.display='none';
+        }
+
+    </script>
+</body>
+</html>
