@@ -421,10 +421,10 @@
                     <p class="titres">identification</p>
                      
                         <label for="">EMAIL UNIVERSITAIRE</label><br>
-                        <input type="text" placeholder="XXX@univ-thies.sn" required class="inp_ins"><br><br>
+                        <input type="text" placeholder="XXX@univ-thies.sn" required class="inp_ins" id="iden" ><br><br>
                         <label for=""> MOT DE PASSE</label><br>
-                        <input type="password"  required class="inp_ins"><br><br>
-                        <button class="btn_ins" onclick="aff_princ()" >SE CONNECTER</button>
+                        <input type="password"  required class="inp_ins" id="pwd" ><br><br>
+                        <button class="btn_ins" onclick="connexion()" id="connect" >SE CONNECTER</button>
                         <br><br>
                         <p>Si vous n'avez pas de compte veuiller Cliquez <a href="#" class="ici">ICI</a></p>
         
@@ -517,6 +517,26 @@
 
 
     <script>
+       
+
+
+        function connexion(){
+        var iden=document.getElementById('iden').value;
+        var pwd=document.getElementById('pwd').value;
+        const connect=document.querySelector("#connect");
+        var iden1="papehamou@univ-thies.sn";
+        var pwd1="11111";
+            if((iden==iden1)&&(pwd1==pwd)){
+                alert("Coonexion reussi");
+                principale.style.display='initial';
+            identification_1.style.display='none';
+            identification_2.style.display='none';
+            }
+            else{
+                alert("mot de passe incorrect")
+            }
+
+        }
         const mes_notes=document.querySelector(".mes_notes");
         const notes=document.querySelector(".notes");
         const admin=document.querySelector(".admin");
@@ -715,15 +735,18 @@
             principale.style.display='none';
             identification_1.style.display='initial';
             identification_2.style.display='none';
+            
            
 
         }
         const insc=document.querySelector("#inscription");
         insc.addEventListener("click",aff_princ);
         function aff_princ(){
+            const droite=document.querySelector(".droite");
             principale.style.display='initial';
             identification_1.style.display='none';
             identification_2.style.display='none';
+            droite.style.display='initial';
 
         }
         icone.addEventListener("click",icon);
