@@ -419,6 +419,7 @@
                 <div class="login_2">
         
                     <p class="titres">identification</p>
+                    <p class="mess">Mot de passe ou Email incorrect</p><br><br>
                      
                         <label for="">EMAIL UNIVERSITAIRE</label><br>
                         <input type="text" placeholder="XXX@univ-thies.sn" required class="inp_ins" id="iden" ><br><br>
@@ -521,19 +522,22 @@
 
 
         function connexion(){
+        var mess=document.querySelector(".mess")
         var iden=document.getElementById('iden').value;
         var pwd=document.getElementById('pwd').value;
         const connect=document.querySelector("#connect");
         var iden1="papehamou@univ-thies.sn";
         var pwd1="11111";
             if((iden==iden1)&&(pwd1==pwd)){
-                alert("Coonexion reussi");
-                principale.style.display='initial';
+             
+                
+            principale.style.display='initial';
             identification_1.style.display='none';
             identification_2.style.display='none';
             }
             else{
-                alert("mot de passe incorrect")
+                
+            mess.style.display='initial';
             }
 
         }
@@ -746,8 +750,7 @@
             principale.style.display='initial';
             identification_1.style.display='none';
             identification_2.style.display='none';
-            droite.style.display='initial';
-
+        
         }
         icone.addEventListener("click",icon);
         function icon(){

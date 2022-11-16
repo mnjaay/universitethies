@@ -95,7 +95,7 @@ display:flex;
 .sal-emp{
     display: none;
 }
-.aff_ins, .aff_admin, .aff_cour, .aff_note, .aff_camps, .cham_ti, .chambre, .ticket, .salle_classe{
+.aff_ins, .aff_admin, .aff_cour, .aff_note, .aff_camps, .cham_ti, .chambre, .ticket, .salle_classe,.mess{
     display: none;
 }
 .btn_ad1, .btn_ad2, .btn_ad3{
@@ -105,6 +105,10 @@ display:flex;
     font-size: 20px;
     cursor: pointer;
     background-color: rgb(12, 12, 112);
+}
+.mess{
+    color: red;
+    font-size: 20px;
 }
 .aff_admin{
 
