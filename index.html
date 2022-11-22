@@ -316,14 +316,14 @@
                 </div>
                 <div class="form">
                     <label for="">NOM</label><br>
-                    <input type="text" placeholder="NOM..." class="inp_ins" ><br><br>
+                    <input type="text" placeholder="NOM..." class="inp_ins" id="nom_" ><br><br>
                     <label for="">PRENOM</label><br>
-                    <input type="text" placeholder="PRENOM..." class="inp_ins"><br><br>
+                    <input type="text" placeholder="PRENOM..." class="inp_ins" id="prenom_"><br><br>
                     <label for="">NUMREO DE DOSSIER</label><br>
                     <input type="text" placeholder= "1234567890..." class="inp_ins"><br><br>
                     <label for="">OBJET DE RETRAIT</label><br>
                     <input type="text" class="inp_ins"><br><br>
-                    <button class="btn_ins">SOUMETTRE</button>
+                    <button class="btn_ins" onclick="administrations()">SOUMETTRE</button>
                 </div>
          
             </div>
@@ -396,21 +396,22 @@
 
          <div class="identification_1">
             <div class="login">
+                <p class="mess1">Veuillez remplir tout les champs</p>
                 <p class="titres">NOUVEAU COMPTE</p>
                     <label for="">NOM</label><br>
-                    <input type="text" placeholder="Nom..." required class="inp_ins"><br><br>
+                    <input type="text" placeholder="Nom..." required class="inp_ins" id="inp_ins"><br><br>
                     <label for="">PRENOM</label><br>
-                    <input type="text" placeholder="Prenom..." required class="inp_ins"><br><br>
+                    <input type="text" placeholder="Prenom..." required class="inp_ins" id="inp_ins"><br><br>
                     <label for="">EMAIL UNIVERSITAIRE</label><br>
-                    <input type="text" placeholder="XXX@univ-thies.sn" required class="inp_ins"><br><br>
+                    <input type="text" placeholder="XXX@univ-thies.sn" required class="inp_ins" id="inp_ins"><br><br>
                    
                     <label for="">NUMREO DE DOSSIER</label><br>
-                    <input type="text" placeholder="1234567890..." required class="inp_ins"><br><br>
+                    <input type="text" placeholder="1234567890..." required class="inp_ins" id="inp_ins"><br><br>
                     <label for="">NOUVEAU MOT DE PASSE</label><br>
-                    <input type="password"  required class="inp_ins"><br><br>
+                    <input type="password"  required class="inp_ins" id="inp_ins" id="mdp"><br><br>
                     <label for="">CONFIRMER MOT DE PASSE</label><br>
-                    <input type="password"  required class="inp_ins"><br><br>
-                    <button class="btn_ins" id="inscription">S'INSCRIRE</button>
+                    <input type="password"  required class="inp_ins" id="inp_ins" id="mdp1"><br><br>
+                    <button class="btn_ins" id="inscription" onclick="aff_inscription()">S'INSCRIRE</button>
                 </div>
         
 
@@ -538,9 +539,38 @@
             else{
                 
             mess.style.display='initial';
+            identification_2.style.display='initial';
             }
 
         }
+
+        function aff_inscription(){
+            var mess1=document.querySelector('.mess1');
+            let inp_ins=document.querySelector('#inp_ins');
+            var mdp=document.getElementById('mdp');
+            var mdp1=document.getElementById('mdp1');
+          
+            if((inp_ins.value=="")){
+                mess1.style.display='initial';
+                identification_1.style.display='initial';
+                alert("error");
+                
+
+
+            }
+            else{
+            const droite=document.querySelector(".droite");
+           
+                 
+            alert("Inscription Validée !")
+            principale.style.display='initial';
+            identification_1.style.display='none';
+            identification_2.style.display='none';
+                
+            }
+            
+        }
+      
         const mes_notes=document.querySelector(".mes_notes");
         const notes=document.querySelector(".notes");
         const admin=document.querySelector(".admin");
@@ -634,6 +664,30 @@
             cham_ti.style.display='none';
             chambre.style.display='none';
 
+        }
+      
+
+        function administrations(){
+            const _prenom=document.getElementById('prenom_');
+            const _nom=document.getElementById('nom_');
+            if((_prenom.value=="")||(_nom.value=="")){
+              
+                alert("veuiller saisir les champs");
+            }
+            else{
+                alert("Felicitation nous allons vous contactez d'ici quelques jours");
+            }
+        }
+        function administrations1(){
+            const _prenom=document.getElementById('prenom_');
+            const _nom=document.getElementById('nom_');
+            if((_prenom.value=="")||(_nom.value=="")){
+              
+                alert("veuiller saisir les champs");
+            }
+            else{
+                alert("Felicitation nous allons vous contactez d'ici quelques jours");
+            }
         }
     
         chamb.addEventListener("click",affiche_chambre);
@@ -744,14 +798,8 @@
 
         }
         const insc=document.querySelector("#inscription");
-        insc.addEventListener("click",aff_princ);
-        function aff_princ(){
-            const droite=document.querySelector(".droite");
-            principale.style.display='initial';
-            identification_1.style.display='none';
-            identification_2.style.display='none';
-        
-        }
+       
+      
         icone.addEventListener("click",icon);
         function icon(){
           principale.style.display='none';
