@@ -161,18 +161,18 @@
                  <div class="ticket">
                     <div>
                         <label for="">NOM</label><br>
-                        <input type="text" placeholder="Nom..." required class="inp_ins"><br><br>
+                        <input type="text" placeholder="Nom..." required class="inp_ins" id="nomt"><br><br>
                         <label for="">PRENOM</label><br>
-                        <input type="text" placeholder="Prenom..." required class="inp_ins"><br><br>
+                        <input type="text" placeholder="Prenom..." required class="inp_ins" id="prenomt"><br><br>
                         <label for="">NUMREO DE DOSSIER</label><br>
-                        <input type="text" placeholder="1234567890..." required class="inp_ins"><br><br>
+                        <input type="text" placeholder="1234567890..." required class="inp_ins" id="numt"><br><br>
                         <select>
                             <option>Petit Dejener</option>
                             <option> Dejener</option>
                         </select>
                         <label for="">Nombre de tickets </label><br><br>
-                        <input type="text" placeholder="20" required class="inp_ins"><br><br>
-                        <button class="btn_ins">ACHETER</button>
+                        <input type="text" placeholder="20" required class="inp_ins" id="nombreticket"><br><br>
+                        <button class="btn_ins" onclick="nombret()">ACHETER</button>
                     </div>
                     <div>
                         <img src="images1.png" height="400px" width="400px">
@@ -348,16 +348,16 @@
                     <label for="">PRENOM</label><br>
                     <input type="text" placeholder="Prenom..." required class="inp_ins" id="prenom_etudiant"><br><br>
                     <label for="">NUMREO DE DOSSIER</label><br>
-                    <input type="text" placeholder="1234567890..." required class="inp_ins"><br><br>
+                    <input type="text" placeholder="1234567890..." required class="inp_ins"  id="num_etudiant"><br><br>
                 </div>
                 <div>
                     
                     <label for="">ETABLISSEMENT (NB)</label><br>
-                    <input type="text" placeholder="CNDL..." required class="inp_ins"><br><br>
+                    <input type="text" placeholder="CNDL..." required class="inp_ins" id="etat_etudiant"><br><br>
                     <label for="">MOYENNE AU BAC (NB)</label><br>
-                    <input type="text" placeholder="10.0..." required class="inp_ins"><br><br>
+                    <input type="text" placeholder="10.0..." required class="inp_ins" id="moyenne_etudiant"><br><br>
                     <label for="">ANNEE DE BAC</label><br>
-                    <input type="text" placeholder="2022..."required class="inp_ins"><br><br>
+                    <input type="text" placeholder="2022..."required class="inp_ins" id="annee_etudiant"><br><br>
                 </div>
                 <div>
                     <label for="">Filiere</label><br>
@@ -419,11 +419,11 @@
             <div class="identification_2">
                 <div class="login_2">
         
-                    <p class="titres">identification</p>
+                    <p class="titres">Identification</p>
                     <p class="mess">Mot de passe ou Email incorrect</p><br><br>
                      
                         <label for="">EMAIL UNIVERSITAIRE</label><br>
-                        <input type="text" placeholder="XXX@univ-thies.sn" required class="inp_ins" id="iden" ><br><br>
+                        <input type="mail" placeholder="XXX@univ-thies.sn" required class="inp_ins" id="iden" ><br><br>
                         <label for=""> MOT DE PASSE</label><br>
                         <input type="password"  required class="inp_ins" id="pwd" ><br><br>
                         <button class="btn_ins" onclick="connexion()" id="connect" >SE CONNECTER</button>

@@ -79,8 +79,7 @@ function connexion(){
     const form=document.querySelector(".form");
     const ticket=document.querySelector(".ticket");
     const salle_classe=document.querySelector(".salle_classe");
-    var prenom_etudiant=document.querySelector("#prenom_etudiant");
-    var nom_etudiant=document.querySelector("#nom_etudiant");
+   
 
   
 
@@ -88,7 +87,20 @@ function connexion(){
     
     
     function message() {
-      alert ("Bonjour "+prenom_etudiant.value+" "+nom_etudiant.value+" "+ " votre inscription est validée ")
+        var prenom_etudiant=document.querySelector("#prenom_etudiant").value;
+        var nom_etudiant=document.querySelector("#nom_etudiant").value;
+        var num_etudiant=document.querySelector("#num_etudiant").value;
+        var annee_etudiant=document.querySelector("#annee_etudiant").value;
+        var etat_etudiant=document.querySelector("#etat_etudiant").value;
+        var moyenne_etudiant=document.querySelector("#moyenne_etudiant").value;
+
+        if((nom_etudiant=="")||(prenom_etudiant=="")||(etat_etudiant=="")||(num_etudiant=="")||(annee_etudiant=="")||(moyenne_etudiant=="")){
+             alert("Veuilez remplir tout les champs");
+        }
+        else{
+            alert("Bonjour "+prenom_etudiant+" "+nom_etudiant+" votre inscription est validé")
+        }
+      
     }
    
     mes_notes.addEventListener("click",affiche_mes_notes);
@@ -283,4 +295,21 @@ function connexion(){
       principale.style.display='none';
       identification_2.style.display='initial';
       identification_1.style.display='none';
-    }
+
+      
+
+      }
+
+     
+      function nombret(){
+        const nombreticket=document.querySelector("#nombreticket").value;
+        const numt=document.querySelector("#numt").value;
+        const nomt=document.querySelector("#nomt").value;
+        const prenomt=document.querySelector("#prenomt").value;
+       if((nombreticket=="")||(nomt=="")||(prenomt=="")||(numt=="")){
+        alert("veuillez saisir les champs !");
+       }
+       else{
+        alert("Votre commande a ete enregisté veuiler passer au resto");
+       }
+      }
